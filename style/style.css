@@ -1,0 +1,988 @@
+font-family: 'DM Mono', monospace;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Roboto', sans-serif;
+/*General and Basic Stuff*/
+
+*{padding: 0;
+margin: 0;
+box-sizing: 0;
+}
+
+button{padding: 0px;}
+
+.dropdown a{text-decoration: none;}
+
+h1{font-family: 'Major Mono Display', monospace;
+    color: #e9ecef;
+    font-size: 3rem;}
+h2{font-family: 'Major Mono Display', monospace;
+    color: #dee2e6;
+    font-size: 2.5rem;}
+h3{font-family: 'DM Mono', monospace;
+    color: #dee2e6;
+    font-size: 1.75rem;}
+h4{font-family: 'Major Mono Display', monospace;
+    color: #dee2e6;
+    font-size: 1.5rem;}
+p{font-family: 'Roboto', sans-serif;
+    color: #ced4da;
+    font-size: 1rem;}
+
+body{background-image: url(../media/background.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tituloSeccion{
+    margin: 25px auto 0px auto;
+    display: block;
+    color: #ff003c;
+    background-color: #e9ecef;
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-align: center; 
+}
+
+
+main {display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+/* Universal Header & Footer */
+
+header{display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+padding: 0px 5px 5px 5px;
+margin: auto;
+max-width: 800px;
+max-height: 100px;
+background-color: rgba(0, 0, 0, 0.775);
+border-radius: 0px 0px 20px 20px;}
+
+.dropdown{background-color: none; display: none;}
+
+.pcNav li{display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    color: #ced4da;
+    background-color: #6D6B6B;
+}
+
+.pcNav a{text-decoration: none;
+color: #ced4da;}
+
+.logo img{height: 90px; width: auto; margin: 5px;}
+
+footer {align-self: flex-end;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.775);}
+
+footer a{text-decoration: none;}
+
+.redes img{width: 32px;}
+
+/*index*/
+
+.indexGrid {display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      "action action"
+      "productoDestacado1 productoDestacado2"
+      "productoDestacado3 nuestraHistoria";
+  width: 90%;
+margin: 20px auto 20px auto;
+}
+  
+  .action { grid-area: action; 
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../media/actionbgrnd.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 25px;
+  }
+  
+    .actionBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px 20px 30px;
+        background-color: #495057b6;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
+    }
+
+    .actionBox h1{text-align: center;
+        font-family: 'Roboto', sans-serif;}
+
+    .actionBox button{
+        background-color: #ff003c;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border-radius: 15px;
+        border: 1px solid rgb(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+        color: #ced4da;
+        }
+  
+.productoDestacado1 { grid-area: productoDestacado1;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.25fr 1.75fr 1fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+    "productoTitulo"
+    "productoImagen"
+    "productoTexto";
+
+    text-decoration: none;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../media/vampFuzz.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+    border: solid #000000 2.5px;
+    }
+
+.productoDestacado2 {grid-area: productoDestacado2;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.25fr 1.75fr 1fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+    "productoTitulo"
+    "productoImagen"
+    "productoTexto";
+
+    text-decoration: none;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../media/serviciosLuthier.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+    border: solid #000000 2.5px;
+}
+
+.productoDestacado3 {grid-area: productoDestacado3;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.25fr 1.75fr 1fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+    "productoTitulo"
+    "productoImagen"
+    "productoTexto";
+    
+    text-decoration: none;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../media/guitarraPortatil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+    border: solid #000000 2.5px;
+}
+
+    
+.productoTitulo{
+        text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5); 
+        grid-area: productoTitulo;
+        margin: 0; 
+        padding: 10px; 
+        background-color: rgba(0, 0, 0, 0.775);
+        text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+        border-radius: 25px 25px 0px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nuestraHistoria { grid-area: nuestraHistoria;
+      display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 0.25fr 1.75fr 1fr; 
+      gap: 5px 5px; 
+      grid-template-areas: 
+      "productoTitulo"
+      "productoImagen"
+      "historiaParrafo";
+    
+      background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../media/nuestraHistoria.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+      box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+      text-decoration: none;
+      border-radius: 25px;
+      border: solid #000000 2.5px;
+    }
+
+.productoImagen {grid-area: productoImagen;
+}
+
+.productoTexto{ grid-area: productoTexto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../media/productoTextoBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 0px 0px 25px 25px;}
+ 
+.historiaParrafo{ grid-area: historiaParrafo;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../media/productoTextoBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 0px 0px 25px 25px;}
+
+.historiaParrafo p{margin: 10px 25px 25px 20px;
+    font-size: 1.2rem;}
+
+/* historia page */
+
+.historiaGrid {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    max-width: 1300px;
+    margin: 25px;
+    background-color: #e9ecef;
+    border-radius: 100px;
+    align-self: center;}
+
+.historiaGrid h1{color: #ff003c;}
+
+.historiaGrid h2{color: #ff003c;}
+
+.historiaGrid h3{color: #ff003c;}
+
+.historiaGrid p{font-size: 1.5rem;
+    color: #212529;}
+
+.historiaGrid span{color: #ff003c;}
+
+.auroraInicios {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr .75fr .75fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: column;
+    grid-template-areas:
+        "tituloArticulo1 imagen1"
+        "parrafo1 imagen1"
+        "parrafo2 parrafo2";
+
+    margin: 25px;
+    max-width: 1200px;
+    align-self: center;
+    }
+      
+.tituloArticulo1 {
+    grid-area: tituloArticulo1; 
+    text-align: center; 
+    align-self: center;
+
+}
+      
+.parrafo1 {
+    grid-area: parrafo1; 
+    max-width: 600px;
+    text-align: right;}
+    
+.imagen1 { 
+    grid-area: imagen1;
+    max-width: 600px;
+    display: grid;
+    grid-template-rows: 1fr 0.25fr;
+    grid-gap: 5px;
+    align-content: center;
+    justify-content: center; 
+}
+    
+.imagen1 img{
+    max-width: 500px; 
+    border-radius: 25px;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+    }
+        
+.imagen1 p{
+    color: #212529;
+    font-size: 0.75rem;
+    text-align: center; height: 5px;}
+            
+.parrafo2 {
+    grid-area: parrafo2; 
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+
+.parrafo2 p{margin: 50px;}
+
+.tallerInicios {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "imagen2 tituloArticulo2"
+      "imagen2 parrafo3"
+      "parrafo4 parrafo4";
+  
+    max-width: 1200px;    
+    margin: 25px;
+    align-self: center;
+}
+ 
+.tituloArticulo2 { 
+  grid-area: tituloArticulo2;
+  text-align: left; 
+  align-self: center;
+}
+
+.parrafo3 {
+    grid-area: parrafo3; 
+    max-width: 600px;
+    text-align: left;}
+
+.parrafo4{
+    grid-area: parrafo4;
+    margin: auto;
+    align-items: center;
+}
+
+.parrafo4 p{ 
+    text-align: center;
+    align-self: center;
+    margin: auto;
+    max-width: 1000px;
+    background-color: #ff003c;
+    border-radius: 25px;
+    padding: 25px;
+    color: #ced4da;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+}
+
+.parrafo4 h3{
+    text-align: right;
+    margin: 25px;}
+  
+.imagen2 {
+    grid-area: imagen2;
+    max-width: 600px;
+    display: grid;
+    grid-template-rows: 0.75fr 0.25fr;
+    grid-gap: 0px;
+    justify-content: center;
+}
+
+.imagen2 img{
+    max-width: 500px; 
+    border-radius: 25px;
+    align-self: center;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+}
+
+.imagen2 p{
+    color: #212529;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.epocaDorada {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr .50fr 0.50fr 0.50fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "tituloArticulo3 tituloArticulo3"
+    "parrafo5 parrafo5"
+    "parrafo6 imagen3"
+    "parrafo7 imagen3";
+
+    max-width: 1200px;    
+    margin: 25px;
+    align-self: center;
+}
+
+.tituloArticulo3 {
+    grid-area: tituloArticulo3;
+    text-align: center;
+    align-self: center;
+}
+
+.parrafo5 {
+    grid-area: parrafo5; 
+    text-align: center;
+    margin: 10px auto 10px auto;
+    align-self: center;
+}
+
+  .parrafo6 { 
+    grid-area: parrafo6; 
+    max-width: 600px;
+    text-align: right;
+    align-self: flex-end;
+}
+  
+  .parrafo7 { 
+    grid-area: parrafo7; 
+    max-width: 600px;
+    text-align: right;
+    align-self: flex-start;
+}
+  
+.imagen3 {
+    grid-area: imagen3;
+    max-width: 600px;
+    display: grid;
+    grid-template-rows: 0.75fr 0.25fr;
+    grid-gap: 0px;
+    justify-content: center;
+    align-content: center;
+}
+  
+.imagen3 img{
+    max-width: 500px; 
+    border-radius: 25px;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+}
+  
+.imagen3 p{
+    color: #212529;
+    font-size: 0.75rem;
+    text-align: center;
+}
+    
+.artCraft4ever {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: .25fr .50fr 1fr; 
+    gap: 5px 50px; 
+    grid-template-areas: 
+    "tituloArticulo4 tituloArticulo4"
+    "parrafo8 parrafo9"
+    "imagen5 imagen5"; 
+
+    max-width: 1200px;    
+    margin: 25px;
+    justify-content: center;
+    align-self: center;
+}
+.tituloArticulo4 { 
+    grid-area: tituloArticulo4;
+    text-align: center; 
+    align-self: center;
+}
+  
+.parrafo8 { 
+    grid-area: parrafo8; 
+    text-align: justify;
+    margin: 10px auto 10px auto;
+    max-width: 400px;
+}
+  
+.parrafo9 {
+    grid-area: parrafo9;
+    text-align: justify;
+    margin: 10px auto 10px auto;
+    max-width: 400px;
+}
+  
+
+.imagen5 { 
+    grid-area: imagen5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+.imagen5 img{
+    max-width: 800px; 
+    border-radius: 50px;
+    align-self: center;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+}
+    
+.imagen5 p{color: #212529;
+    font-size: 0.75rem;
+    text-align: center;}
+    
+/* tienda page */
+
+.tiendaFlex {display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 25px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 10px 30px 10px;
+    margin: 25px;
+}
+
+.tiendaFlex button{
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.cajaBoton {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .25fr 1.25fr 0.25fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nombreArticulo nombreArticulo"
+        "imagenArticulo imagenArticulo"
+        "descripPeque precioLetra";
+
+        border-radius: 15px;
+        border: 1px solid rgb(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);    
+    }
+      
+.nombreArticulo { 
+    grid-area: nombreArticulo; 
+    background: rgb(33,37,41);
+    background: linear-gradient(180deg, rgba(33,37,41,1) 90%, rgba(33,37,41,0) 100%); 
+    border-radius: 15px 15px 0px 0px;
+    margin: 0;
+    height: 100%;}
+      
+.imagenArticulo { 
+    grid-area: imagenArticulo;
+    justify-content: center;
+    overflow: hidden;    
+}
+      
+.descripPeque { grid-area: descripPeque; 
+    text-align: right; 
+    background: rgb(33,37,41);
+    background: linear-gradient(0deg, rgba(33,37,41,1) 90%, rgba(33,37,41,0) 100%);
+    border-radius: 0px 0px 0px 15px;
+    margin: 0;
+    padding: 5px 5px 0px 0px;
+    height: 100%;
+    }
+      
+.precioLetra { grid-area: precioLetra; 
+    margin: 0; 
+    background: rgb(233,236,239);
+    background: linear-gradient(0deg, rgba(233,236,239,1) 90%, rgba(233,236,239,0) 100%);
+    height: 100%;
+    border-radius: 0px 0px 15px 0px;
+    align-items: center;
+}
+
+.precioLetra p{ margin: 0px;
+    color: #212529;}
+    
+.precio {
+    color: #ff003c;
+    font-size: 1.25rem;
+    font-style: italic;
+    }
+
+.precio span{font-size: 0.75rem;}
+
+.tiendaFlex img{
+    max-width: 298px;
+}
+
+.popup{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.5fr 1fr 1fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+      "tituloPopup btn-cerrar-popup"
+      "carrouselPopup carrouselPopup"
+      "descripcionPopup descripcionPopup";
+
+    height: 600px;
+    width: 500px;
+    background-color: #e9ecef;
+    color: #212529;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+  }
+
+.tituloPopup { grid-area: tituloPopup; color: #ff003c;}
+  
+.btn-cerrar-popup { 
+    grid-area: btn-cerrar-popup; 
+    display: block;
+    text-align: right;
+}
+
+.carrouselPopup { grid-area: carrouselPopup;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+}
+
+.descripcionPopup {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 0.5fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+    "descriDiv descriDiv"
+    "precioPopup wpButt";
+
+    grid-area: descripcionPopup; 
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.descriDiv { grid-area: descriDiv; }
+
+.descriDiv {
+    color: #212529; 
+    text-align: justify;
+}
+
+.precioPopup { 
+    grid-area: precioPopup;
+    color: #ff003c;
+    font-style: italic;
+    font-size: 1.25rem;
+    height: 20px;
+    text-align: center;
+}
+
+.precioPopup span{
+    font-size: 0.75rem;
+}
+
+.btn-cerrar-popup img{height: 32px;}
+
+.wpButt {
+    grid-area: wpButt;
+    color: #e9ecef;
+    border-radius: 5px;
+    background-color: #25D366;
+    height: 30px;
+    width: auto;
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-decoration: none;
+    text-align: center;
+    }
+
+.overlay{background-color: rgb(0, 0, 0, .3);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;}
+
+.overlay.active {visibility: visible;}
+
+/* Servicios Page */
+
+.serviciosFlex {display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 25px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 10px 30px 10px;
+    margin: 25px;
+}
+
+.serviciosFlex h1{
+    color: #ff003c;
+text-align: center;}
+
+.introServicios {max-width: 1000px;}
+
+.introServicios p{
+    text-align: justify;
+    margin: 12.5px 100px 12.5px 100px;
+}
+
+#introServicios {color: #212529;}
+
+.introServicios span {
+    color: #ff003c;
+}
+
+.infoAlert{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #e9ecef;
+    background-color: #212529;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    padding: 25px;
+    margin: auto;
+    max-width: 900px;
+}
+
+.infoAlert p{    
+    text-align: justify;
+    margin: 12.5px 100px 12.5px 100px;}
+
+.infoAlert h2{
+    text-align: center;
+    color: #ff003c;
+}
+
+.infoAlert h1{
+    text-align: center;
+    color: #ff003c;
+}
+
+.serviciosForm{
+    max-width: 1100px;
+    margin: 50px 100px 50px 100px;
+}
+
+/* faq page */
+
+.faqFlex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 25px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 10px 30px 10px;
+    margin: 25px;
+}
+
+.acordeonFlex{
+    max-width: 1000px;
+    margin: 25px;
+}
+
+.acordeonFlex p{
+    font-family: 'Roboto', sans-serif;
+    color: #212529;
+}
+
+.acordeonFlex a{
+    color: #ff003c;
+    text-decoration: none;
+}
+
+.acordeonFlex ul{
+    color: #212529;
+    font-family: 'Roboto', sans-serif;
+}
+
+.acordeonFlex ol{
+    color: #212529;
+    font-family: 'Roboto', sans-serif;
+}
+
+  @media (max-width: 768px) {
+
+    body {margin: auto; padding: 25px; max-width: 768px;} 
+    footer{margin:auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;}
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .dropdown{display: inline-block;} 
+    .pcNav{display: none;}
+    .indexGrid {  
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 20px 0px; 
+    grid-template-areas: 
+    "action"
+    "productoDestacado1"
+    "productoDestacado2"
+    "productoDestacado3"
+    "nuestraHistoria";  
+          
+    padding: 10px;
+    height: 100vh;
+    width: auto;
+    max-width: 740px;
+    justify-content: center;
+    margin: 10px;}
+
+
+    .productoDestacado1{height: 60vh;}
+    .productoDestacado2{height: 60vh;}
+    .productoDestacado3{height: 60vh;}
+    .nuestraHistoria{height: 60vh; margin-bottom: 120px;}
+    .productoImagen{display: none;}
+    .productoTexto{background-image: none;
+    background-color: rgba(0, 0, 0, 0.775);}
+    .historiaParrafo{background-image: none;
+    background-color: rgba(0, 0, 0, 0.775);}
+            
+    h1{font-size: 2rem;}
+    h2{font-size: 1.5rem;}
+    h3{font-size: 1.25rem;}
+    p{font-size: 1rem;}
+
+    /*Media Queris Servicios */
+
+    .infoAlert{
+        padding: 5px;
+    }
+
+    .infoAlert p{
+        margin: 15px
+    };
+
+    .introServicios{padding: 10px;}
+
+    .introServicios p{
+        margin: 10px;
+    }
+ 
+}
+  
+  @media  (max-width: 420px) {
+    body{margin: auto;}
+    footer{margin:auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;}
+    main{margin-bottom: 120px;}
+    .dropdown{display: inline-block;} 
+    .pcNav{display: none;}
+    .indexGrid {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 20px 0px; 
+    grid-template-areas: 
+    "action"
+    "productoDestacado1"
+    "productoDestacado2"
+    "productoDestacado3"
+    "nuestraHistoria";
+
+    padding: 10px;
+    height: 100vh;
+    width: auto;
+    max-width: 400px;
+    justify-content: center;
+    margin: 10px;
+    }
+    .productoDestacado1{height: 60vh;}
+    .productoDestacado2{height: 60vh;}
+    .productoDestacado3{height: 60vh;}
+    .nuestraHistoria{height: 60vh; margin-bottom: 120px;}
+    .productoImagen{display: none;}
+    .productoTexto{background-image: none;
+    background-color: rgba(0, 0, 0, 0.775);}
+    .historiaParrafo{background-image: none;
+    background-color: rgba(0, 0, 0, 0.775);}
+
+    h1{font-size: 2rem;}
+    h2{font-size: 1.5rem;}
+    h3{font-size: 1.25rem;}
+    p{font-size: 1rem;}
+
+        /*Media Queris Servicios */
+
+        .infoAlert{
+            padding: 2.5px;
+        }
+    
+        .infoAlert p{
+            margin: 7.5px
+        };
+        
+        .introServicios{padding: 5px;}
+
+        .introServicios p{
+            margin: 5px;
+        }
+
+}
+    
