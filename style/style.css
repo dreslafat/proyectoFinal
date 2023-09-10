@@ -807,7 +807,7 @@ text-align: center;}
 
 .serviciosForm{
     max-width: 1100px;
-    margin: 50px 100px 50px 100px;
+    margin: 50px 50px 50px 50px;
 }
 
 /* faq page */
@@ -920,7 +920,14 @@ text-align: center;}
         margin: 10px;
     }
 
-    .serviciosFlex {margin: 25px;}
+    .serviciosFlex{
+        margin: 20px;
+        padding: 5px;}
+
+    .serviciosform {
+        max-width: 700px;
+        margin: 15px;
+    }
  
 }
   
@@ -983,6 +990,15 @@ text-align: center;}
         .introServicios{padding: 5px;}
 
         .introServicios p{
+            margin: 5px;
+        }
+
+        .serviciosFlex{
+            margin: 10px;
+            padding: 5px;}
+    
+        .serviciosform {
+            max-width: 400px;
             margin: 5px;
         }
 }
