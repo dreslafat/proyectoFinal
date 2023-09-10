@@ -919,6 +919,8 @@ text-align: center;}
     .introServicios p{
         margin: 10px;
     }
+
+    .serviciosFlex {margin: 25px;}
  
 }
   
@@ -983,6 +985,5 @@ text-align: center;}
         .introServicios p{
             margin: 5px;
         }
-
 }
     
