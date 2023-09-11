@@ -108,10 +108,21 @@ header {
     color: #ced4da;
 }
 
+.pcNav li:hover{
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
+    background-color: #ff003c;
+    transition: all 0.3s ease;
+}
+
 .logo img {
     height: 90px;
     width: auto;
     margin: 5px;
+}
+
+.logo img:hover{
+    height: 95px;
+    transition: all 0.3s ease; 
 }
 
 footer {
@@ -133,13 +144,18 @@ footer a {
     width: 32px;
 }
 
+.redes img:hover {
+    width: 46px;
+    transition: all 0.3s ease; 
+}
+
 /*index*/
 
 .indexGrid {
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: fr 1fr 1fr;
+    grid-template-rows: 0.5fr .25fr .25fr;
     gap: 20px 20px;
     grid-template-areas:
         "action action"
@@ -189,6 +205,13 @@ footer a {
     color: #ced4da;
 }
 
+.actionBox button:hover{    
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.75);
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
 .productoDestacado1 {
     grid-area: productoDestacado1;
     display: grid;
@@ -201,6 +224,7 @@ footer a {
         "productoImagen"
         "productoTexto";
 
+    max-height: 500px;
     text-decoration: none;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/vampFuzz.webp);
     background-repeat: no-repeat;
@@ -212,6 +236,11 @@ footer a {
     border: solid #000000 2.5px;
 }
 
+.productoDestacado1:hover {
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease; 
+}
+
 .productoDestacado2 {
     grid-area: productoDestacado2;
     display: grid;
@@ -220,10 +249,11 @@ footer a {
     grid-template-rows: 0.25fr 1.75fr 1fr;
     gap: 5px 5px;
     grid-template-areas:
-        "productoTitulo"
-        "productoImagen"
-        "productoTexto";
-
+    "productoTitulo"
+    "productoImagen"
+    "productoTexto";
+    
+    max-height: 500px;
     text-decoration: none;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/serviciosLuthier.jpg);
     background-repeat: no-repeat;
@@ -235,6 +265,12 @@ footer a {
     border: solid #000000 2.5px;
 }
 
+.productoDestacado2:hover{
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease; 
+}
+
+
 .productoDestacado3 {
     grid-area: productoDestacado3;
     display: grid;
@@ -243,10 +279,11 @@ footer a {
     grid-template-rows: 0.25fr 1.75fr 1fr;
     gap: 5px 5px;
     grid-template-areas:
-        "productoTitulo"
-        "productoImagen"
-        "productoTexto";
-
+    "productoTitulo"
+    "productoImagen"
+    "productoTexto";
+    
+    max-height: 500px;
     text-decoration: none;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/guitarraPortatil.jpg);
     background-repeat: no-repeat;
@@ -258,6 +295,10 @@ footer a {
     border: solid #000000 2.5px;
 }
 
+.productoDestacado3:hover{
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease; 
+}
 
 .productoTitulo {
     text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
@@ -279,10 +320,11 @@ footer a {
     grid-template-rows: 0.25fr 1.75fr 1fr;
     gap: 5px 5px;
     grid-template-areas:
-        "productoTitulo"
-        "productoImagen"
-        "historiaParrafo";
-
+    "productoTitulo"
+    "productoImagen"
+    "productoTexto";
+    
+    max-height: 500px;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/nuestraHistoria.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,28 +336,16 @@ footer a {
     border: solid #000000 2.5px;
 }
 
+.nuestraHistoria:hover{
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease;} 
+
 .productoImagen {
     grid-area: productoImagen;
 }
 
 .productoTexto {
     grid-area: productoTexto;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/productoTextoBackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
-    border-radius: 0px 0px 25px 25px;
-}
-
-.historiaParrafo {
-    grid-area: historiaParrafo;
     display: flex;
     text-align: center;
     align-items: center;
@@ -814,6 +844,11 @@ footer a {
     height: 32px;
 }
 
+.btn-cerrar-popup img:hover {
+    height: 24px;
+    transition: all 0.3s ease;
+}
+
 .wpButt {
     grid-area: wpButt;
     color: #e9ecef;
@@ -821,11 +856,17 @@ footer a {
     background-color: #25D366;
     height: 30px;
     width: auto;
-    padding: 5px;
+    padding: 2.5px 2.5px 10px 2.5px;
     border: 1px solid rgb(0, 0, 0, 0.5);
     box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
     text-decoration: none;
     text-align: center;
+}
+
+.wpButt:hover{
+    background-color: #0f7936;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
 }
 
 .overlay {
@@ -843,6 +884,11 @@ footer a {
 
 .overlay.active {
     visibility: visible;
+}
+
+.cajaBoton:hover {
+    transition: all 0.3s ease;
+    box-shadow: 15px 15px 30px rgb(0, 0, 0, 0.75);
 }
 
 /* Servicios Page */
