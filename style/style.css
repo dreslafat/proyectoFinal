@@ -969,6 +969,11 @@ footer p {
     font-family: 'Roboto', sans-serif;
 }
 
+.acordeonFlex span {
+    color: #212529;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
 
     body {
