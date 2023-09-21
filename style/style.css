@@ -140,6 +140,12 @@ footer a {
     text-decoration: none;
 }
 
+footer p {
+    font-family: 'DM Mono', monospace;
+    color: #dee2e6;
+    font-size: 1.75rem;
+}
+
 .redes img {
     width: 32px;
 }
@@ -843,6 +849,7 @@ footer a {
 .cajaBoton:hover {
     transition: all 0.3s ease;
     box-shadow: 15px 15px 30px rgb(0, 0, 0, 0.75);
+    
 }
 
 /* Servicios Page */
@@ -1132,6 +1139,24 @@ text-align: justify;
     .parrafo7 {
         margin: 25px;
     }
+
+    .historiaGrid h1 {
+    font-size: 2rem;
+    }
+    
+    .historiaGrid h2 {
+        font-size: 1.5rem;
+    }
+    
+    .historiaGrid h3 {
+        font-size: 1.25rem;
+    }
+    
+    .historiaGrid p {
+        font-size: 1rem;
+    }
+  
+
 }
 
 @media (max-width: 420px) {
