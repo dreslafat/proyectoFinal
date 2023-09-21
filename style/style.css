@@ -10,7 +10,7 @@ button {
     padding: 0px;
 }
 
-.dropdown a {
+.burguer a {
     text-decoration: none;
 }
 
@@ -86,7 +86,7 @@ header {
     border-radius: 0px 0px 20px 20px;
 }
 
-.dropdown {
+.burguer {
     background-color: none;
     display: none;
 }
@@ -996,7 +996,7 @@ footer p {
         max-width: 700px;
     }
 
-    .dropdown {
+    .burguer {
         display: inline-block;
     }
 
@@ -1177,7 +1177,7 @@ text-align: justify;
         margin-bottom: 120px;
     }
 
-    .dropdown {
+    .burguer {
         display: inline-block;
     }
 
