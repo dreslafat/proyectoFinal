@@ -1,0 +1,1328 @@
+/*General and Basic Stuff*/
+
+* {
+    padding: 0;
+    height: auto;
+    margin: 0;
+    box-sizing: 0;
+}
+
+button {
+    padding: 0px;
+}
+
+.burguer a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Major Mono Display', monospace;
+    color: #e9ecef;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Major Mono Display', monospace;
+    color: #dee2e6;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'DM Mono', monospace;
+    color: #dee2e6;
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-family: 'Major Mono Display', monospace;
+    color: #dee2e6;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #ced4da;
+    font-size: 1rem;
+}
+
+body {
+    background-image: url(../media/background.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tituloSeccion {
+    margin: 25px auto 0px auto;
+    display: block;
+    color: #ff003c;
+    background-color: #e9ecef;
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Universal Header & Footer */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 5px 5px 5px;
+    margin: auto;
+    max-width: 800px;
+    max-height: 100px;
+    background-color: rgba(0, 0, 0, 0.775);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.burguer {
+    background-color: none;
+    display: none;
+}
+
+.pcNav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    color: #ced4da;
+    background-color: #6D6B6B;
+}
+
+.pcNav a {
+    text-decoration: none;
+    color: #ced4da;
+}
+
+.pcNav li:hover {
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
+    background-color: #ff003c;
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    height: 90px;
+    width: auto;
+    margin: 5px;
+}
+
+.logo img:hover {
+    height: 95px;
+    transition: all 0.3s ease;
+}
+
+footer {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.775);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    font-family: 'DM Mono', monospace;
+    color: #dee2e6;
+    font-size: 1.75rem;
+}
+
+.redes img {
+    width: 32px;
+}
+
+.redes img:hover {
+    width: 46px;
+    transition: all 0.3s ease;
+}
+
+/*index*/
+
+.indexGrid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr .25fr .25fr;
+    gap: 20px 20px;
+    grid-template-areas:
+        "action action"
+        "productoDestacado1 productoDestacado2"
+        "productoDestacado3 nuestraHistoria";
+    width: 90%;
+    margin: 20px auto 20px auto;
+}
+
+.action {
+    grid-area: action;
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/actionbgrnd.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 25px;
+}
+
+.actionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 20px 30px;
+    background-color: #495057b6;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
+}
+
+.actionBox h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.actionBox button {
+    background-color: #ff003c;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    color: #ced4da;
+}
+
+.actionBox button:hover {
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.75);
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.productoDestacado1 {
+    grid-area: productoDestacado1;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1.75fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "productoTitulo"
+        "productoImagen"
+        "productoTexto";
+
+    max-height: 500px;
+    text-decoration: none;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/vampFuzz.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+    border: solid #000000 2.5px;
+}
+
+.productoDestacado1:hover {
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease;
+}
+
+.productoDestacado2 {
+    grid-area: productoDestacado2;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1.75fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "productoTitulo"
+        "productoImagen"
+        "productoTexto";
+
+    max-height: 500px;
+    text-decoration: none;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/serviciosLuthier.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+    border: solid #000000 2.5px;
+}
+
+.productoDestacado2:hover {
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease;
+}
+
+
+.productoDestacado3 {
+    grid-area: productoDestacado3;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1.75fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "productoTitulo"
+        "productoImagen"
+        "productoTexto";
+
+    max-height: 500px;
+    text-decoration: none;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/guitarraPortatil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+    border: solid #000000 2.5px;
+}
+
+.productoDestacado3:hover {
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease;
+}
+
+.productoTitulo {
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    grid-area: productoTitulo;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.775);
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 25px 25px 0px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.nuestraHistoria {
+    grid-area: nuestraHistoria;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1.75fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "productoTitulo"
+        "productoImagen"
+        "productoTexto";
+
+    max-height: 500px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/nuestraHistoria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-decoration: none;
+    border-radius: 25px;
+    border: solid #000000 2.5px;
+}
+
+.nuestraHistoria:hover {
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease;
+}
+
+.productoImagen {
+    grid-area: productoImagen;
+}
+
+.productoTexto {
+    grid-area: productoTexto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/productoTextoBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.historiaParrafo2 {
+    display: none;
+}
+
+.historiaParrafo p {
+    margin: 10px 25px 25px 20px;
+    font-size: 1.2rem;
+}
+
+/* historia page */
+
+.historiaGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 1300px;
+    margin: 25px;
+    background-color: #e9ecef;
+    border-radius: 100px;
+    align-self: center;
+}
+
+.historiaGrid h1 {
+    color: #ff003c;
+}
+
+.historiaGrid h2 {
+    color: #ff003c;
+}
+
+.historiaGrid h3 {
+    color: #ff003c;
+}
+
+.historiaGrid p {
+    font-size: 1.5rem;
+    color: #212529;
+}
+
+.historiaGrid span {
+    color: #ff003c;
+}
+
+.auroraInicios {
+    margin: 25px;
+    max-width: 1200px;
+}
+
+.tituloArticulo1 {
+    align-items: center;
+    text-align: center;
+    margin: 25px;
+}
+
+.parrafo1 {
+    max-width: 600px;
+    align-items: center;
+    text-align: right;
+    margin: auto 0px auto 5px;
+}
+
+.imagen1 {
+    max-width: 600px;
+    display: grid;
+    grid-template-rows: 1fr 0.25fr;
+    grid-gap: 5px;
+    align-content: center;
+    justify-content: center;
+}
+
+.imagen1 img {
+    height: auto;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+}
+
+.imagen1 p {
+    color: #212529;
+    font-size: 0.75rem;
+    text-align: center;
+    height: 5px;
+}
+
+.parrafo2 {
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+
+.parrafo2 p {
+    margin: 50px;
+}
+
+.tallerInicios {
+    max-width: 1200px;
+    margin: 25px;
+    align-self: center;
+}
+
+.tituloArticulo2 {
+    text-align: right;
+    align-self: center;
+    margin: 25px;
+}
+
+.parrafo3 {
+    max-width: 600px;
+    text-align: right;
+}
+
+.parrafo4 {
+    margin: auto;
+    align-items: center;
+}
+
+.parrafo4 p {
+    text-align: center;
+    align-self: center;
+    margin: auto;
+    max-width: 1000px;
+    background-color: #c8002f;
+    border-radius: 25px;
+    padding: 25px;
+    color: #ced4da;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+}
+
+.parrafo4 h3 {
+    text-align: right;
+    margin: 25px;
+}
+
+.imagen2 {
+    max-width: 600px;
+    display: grid;
+    grid-template-rows: 1fr 0.25fr;
+    grid-gap: 5px;
+    align-content: center;
+    justify-content: center;
+}
+
+.imagen2 img {
+    height: auto;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+}
+
+.imagen2 p {
+    color: #212529;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.epocaDorada {
+    max-width: 1200px;
+    margin: 25px;
+    align-self: center;
+}
+
+.tituloArticulo3 {
+    margin: 25px;
+    text-align: center;
+    align-self: center;
+}
+
+.parrafo5 {
+    text-align: center;
+    margin: 50px auto 50px auto;
+    align-self: center;
+}
+
+.parrafo6 {
+    max-width: 600px;
+    text-align: right;
+    align-self: flex-end;
+    margin: 12.5px 0px 12.5px 25px;
+}
+
+.parrafo7 {
+    max-width: 600px;
+    text-align: right;
+    align-self: flex-start;
+    margin: 12.5px 0px 12.5px 25px;
+}
+
+.imagen3 {
+    max-width: 600px;
+    display: grid;
+    grid-template-rows: 1fr 0.25fr;
+    grid-gap: 5px;
+    align-content: center;
+    justify-content: center;
+}
+
+.imagen3 img {
+    height: auto;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+}
+
+.imagen3 p {
+    color: #212529;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.artCraft4ever {
+    max-width: 1200px;
+    margin: 25px;
+    justify-content: center;
+    align-self: center;
+}
+
+.tituloArticulo4 {
+    text-align: center;
+    align-self: center;
+    margin: 25px;
+}
+
+.parrafo8 {
+    text-align: justify;
+    margin: 10px auto 10px auto;
+    max-width: 400px;
+}
+
+.parrafo9 {
+    text-align: justify;
+    margin: 10px auto 10px auto;
+    max-width: 400px;
+}
+
+
+.imagen5 {
+    max-width: 600px;
+    display: grid;
+    grid-template-rows: 1fr 0.25fr;
+    grid-gap: 5px;
+    align-content: center;
+    justify-content: center;
+}
+
+.imagen5 img {
+    height: auto;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+}
+
+.imagen5 p {
+    color: #212529;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+/* tienda page */
+
+.tiendaFlex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 25px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 10px 30px 10px;
+    margin: 25px;
+}
+
+.cajaBoton {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .25fr 1.25fr 0.25fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nombreArticulo nombreArticulo"
+        "imagenArticulo imagenArticulo"
+        "descripPeque precioLetra";
+
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+}
+
+.nombreArticulo {
+    grid-area: nombreArticulo;
+    background: rgb(33, 37, 41);
+    background: linear-gradient(180deg, rgba(33, 37, 41, 1) 90%, rgba(33, 37, 41, 0) 100%);
+    border-radius: 15px 15px 0px 0px;
+    margin: 0px 0px 5px 0px;
+    height: 100%;
+}
+
+.nombreArticulo h2 {
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+    color: #dee2e6;
+    font-size: 1.5rem;
+}
+
+.imagenArticulo {
+    grid-area: imagenArticulo;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.descripPeque {
+    grid-area: descripPeque;
+    text-align: right;
+    background: rgb(33, 37, 41);
+    background: linear-gradient(0deg, rgba(33, 37, 41, 1) 90%, rgba(33, 37, 41, 0) 100%);
+    border-radius: 0px 0px 0px 15px;
+    margin: 0;
+    padding: 5px 5px 0px 0px;
+    height: 100%;
+}
+
+.precioLetra {
+    grid-area: precioLetra;
+    margin: 0;
+    background: rgb(233, 236, 239);
+    background: linear-gradient(0deg, rgba(233, 236, 239, 1) 90%, rgba(233, 236, 239, 0) 100%);
+    height: 100%;
+    border-radius: 0px 0px 15px 0px;
+    align-items: center;
+}
+
+.precioLetra p {
+    margin: 0px;
+    color: #212529;
+}
+
+.precio {
+    color: #ff003c;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.precio span {
+    font-size: 0.75rem;
+}
+
+.tiendaFlex img {
+    max-width: 298px;
+}
+
+.popup {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "tituloPopup btn-cerrar-popup"
+        "carrouselPopup carrouselPopup"
+        "descripcionPopup descripcionPopup";
+
+    height: 600px;
+    width: 500px;
+    background-color: #e9ecef;
+    color: #212529;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+}
+
+.tituloPopup {
+    grid-area: tituloPopup;
+    color: #ff003c;
+}
+
+.btn-cerrar-popup {
+    grid-area: btn-cerrar-popup;
+    display: block;
+    text-align: right;
+}
+
+.carrouselPopup {
+    grid-area: carrouselPopup;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+}
+
+.descripcionPopup {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "descriDiv descriDiv"
+        "precioPopup wpButt";
+
+    grid-area: descripcionPopup;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.descriDiv {
+    grid-area: descriDiv;
+}
+
+.descriDiv {
+    color: #212529;
+    text-align: justify;
+}
+
+.precioPopup {
+    grid-area: precioPopup;
+    color: #ff003c;
+    font-style: italic;
+    font-size: 1.25rem;
+    height: 20px;
+    text-align: center;
+}
+
+.precioPopup span {
+    font-size: 0.75rem;
+}
+
+.btn-cerrar-popup img {
+    height: 32px;
+}
+
+.btn-cerrar-popup img:hover {
+    height: 24px;
+    transition: all 0.3s ease;
+}
+
+.wpButt {
+    grid-area: wpButt;
+    color: #e9ecef;
+    border-radius: 5px;
+    background-color: #25D366;
+    height: 30px;
+    width: auto;
+    padding: 2.5px 2.5px 10px 2.5px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-decoration: none;
+    text-align: center;
+}
+
+.wpButt:hover {
+    background-color: #0f7936;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.overlay {
+    background-color: rgb(0, 0, 0, .3);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.cajaBoton:hover {
+    transition: all 0.3s ease;
+    box-shadow: 15px 15px 30px rgb(0, 0, 0, 0.75);
+
+}
+
+/* Servicios Page */
+
+.serviciosFlex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 25px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 10px 30px 10px;
+    margin: 25px;
+}
+
+.serviciosFlex h1 {
+    color: #ff003c;
+    text-align: center;
+}
+
+.introServicios {
+    max-width: 1000px;
+}
+
+.introServicios p {
+    text-align: justify;
+    margin: 12.5px 100px 12.5px 100px;
+}
+
+#introServicios {
+    color: #212529;
+}
+
+.introServicios span {
+    color: #ff003c;
+}
+
+.infoAlert {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #e9ecef;
+    background-color: #212529;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    padding: 25px;
+    margin: auto;
+    max-width: 900px;
+}
+
+.infoAlert p {
+    text-align: justify;
+    margin: 12.5px 100px 12.5px 100px;
+}
+
+.infoAlert h2 {
+    text-align: center;
+    color: #ff003c;
+}
+
+.infoAlert h1 {
+    text-align: center;
+    color: #ff003c;
+}
+
+.serviciosForm {
+    max-width: 1100px;
+    margin: 50px 50px 50px 50px;
+}
+
+/* faq page */
+
+.faqFlex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 25px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 10px 30px 10px;
+    margin: 25px;
+}
+
+.acordeonFlex {
+    max-width: 1000px;
+    margin: 25px;
+}
+
+.acordeonFlex p {
+    font-family: 'Roboto', sans-serif;
+    color: #212529;
+}
+
+.acordeonFlex a {
+    color: #ff003c;
+    text-decoration: none;
+}
+
+.acordeonFlex ul {
+    color: #212529;
+    font-family: 'Roboto', sans-serif;
+}
+
+.acordeonFlex ol {
+    color: #212529;
+    font-family: 'Roboto', sans-serif;
+}
+
+.acordeonFlex span {
+    color: #212529;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        margin: auto;
+        padding: 25px;
+        max-width: 768px;
+    }
+
+    main {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    footer {
+        max-height: 100px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    header {
+        max-height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 700px;
+    }
+
+    .burguer {
+        display: inline-block;
+    }
+
+    .pcNav {
+        display: none;
+    }
+
+    .indexGrid {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px 0px;
+        grid-template-areas:
+            "action"
+            "productoDestacado1"
+            "productoDestacado2"
+            "productoDestacado3"
+            "nuestraHistoria";
+
+        margin: 25px auto;
+        padding: 10px;
+        width: auto;
+        max-width: 740px;
+        justify-content: center;
+    }
+
+
+    .productoDestacado1 {
+        height: 60vh;
+    }
+
+    .productoDestacado2 {
+        height: 60vh;
+    }
+
+    .productoDestacado3 {
+        height: 60vh;
+    }
+
+    .nuestraHistoria {
+        height: 60vh;
+        margin-bottom: 120px;
+    }
+
+    .productoImagen {
+        display: none;
+    }
+
+    .productoTexto {
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.775);
+    }
+
+    .historiaParrafo {
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.775);
+    }
+
+    .historiaParrafo1 {
+        display: none;
+    }
+
+    .historiaParrafo2 {
+        display: block;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /*Media Queris Servicios */
+
+    .infoAlert {
+        padding: 5px;
+    }
+
+    .infoAlert p {
+        margin: 15px
+    }
+
+    ;
+
+    .introServicios {
+        padding: 10px;
+    }
+
+    .introServicios p {
+        margin: 10px;
+    }
+
+    .serviciosFlex {
+        margin: 20px;
+        padding: 5px;
+    }
+
+    .serviciosform {
+        max-width: 700px;
+        margin: 15px;
+    }
+
+    /*Media Queris Tienda */
+
+    .popup {
+        margin: 25px;
+        max-width: 700px;
+    }
+
+    .carrouselPopup {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    /*Media Queris Historia*/
+
+    .historiaGrid p {
+        text-align: justify;
+    }
+
+    .historiaGrid h2 {
+        text-align: center;
+    }
+
+    .parrafo6 {
+        margin: 25px;
+    }
+
+    .parrafo7 {
+        margin: 25px;
+    }
+
+    .historiaGrid h1 {
+        font-size: 2rem;
+    }
+
+    .historiaGrid h2 {
+        font-size: 1.5rem;
+    }
+
+    .historiaGrid h3 {
+        font-size: 1.25rem;
+    }
+
+    .historiaGrid p {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (max-width: 420px) {
+    body {
+        margin: auto;
+    }
+
+    footer {
+        margin: auto;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    main {
+        margin-bottom: 120px;
+    }
+
+    .burguer {
+        display: inline-block;
+    }
+
+    .pcNav {
+        display: none;
+    }
+
+    .indexGrid {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px 0px;
+        grid-template-areas:
+            "action"
+            "productoDestacado1"
+            "productoDestacado2"
+            "productoDestacado3"
+            "nuestraHistoria";
+
+        padding: 10px;
+        width: auto;
+        max-width: 400px;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .productoDestacado1 {
+        height: 60vh;
+    }
+
+    .productoDestacado2 {
+        height: 60vh;
+    }
+
+    .productoDestacado3 {
+        height: 60vh;
+    }
+
+    .nuestraHistoria {
+        height: 60vh;
+        margin-bottom: 120px;
+    }
+
+    .productoImagen {
+        display: none;
+    }
+
+    .productoTexto {
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.775);
+    }
+
+    .historiaParrafo {
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.775);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /*Media Queris Servicios */
+
+    .infoAlert {
+        padding: 2.5px;
+    }
+
+    .infoAlert p {
+        margin: 7.5px
+    }
+
+    ;
+
+    .introServicios {
+        padding: 5px;
+    }
+
+    .introServicios p {
+        margin: 5px;
+    }
+
+    .serviciosFlex {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .serviciosform {
+        max-width: 400px;
+        margin: 5px;
+    }
+
+    /*Media Queris Tienda */
+
+    .popup {
+        margin: 15px;
+        max-width: 390px;
+        grid-template-rows: 0.25fr 1fr 1fr;
+    }
+
+    .carrouselPopup {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    /*Media Queris Historia*/
+
+    .historiaGrid p {
+        text-align: justify;
+    }
+
+    .historiaGrid h2 {
+        text-align: center;
+    }
+
+    .parrafo6 {
+        margin: 25px;
+    }
+
+    .parrafo7 {
+        margin: 25px;
+    }
+}
