@@ -1,4 +1,5 @@
 @import "_mixin";
+@import "_variables";
 
 .indexGrid{
     display: grid;
@@ -127,5 +128,53 @@
         .productoTexto {
             @include productoTexto
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .indexGrid {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px 0px;
+        grid-template-areas:
+            "action"
+            "productoDestacado1"
+            "productoDestacado2"
+            "productoDestacado3"
+            "nuestraHistoria";
+
+        margin: 25px auto;
+        padding: 10px;
+        width: auto;
+        max-width: 740px;
+        justify-content: center;
+    
+        
+        .productoDestacado1 {
+            height: 60vh;
+        }
+        
+        .productoDestacado2 {
+            height: 60vh;
+        }
+        
+        .productoDestacado3 {
+            height: 60vh;
+        }
+        
+        .nuestraHistoria {
+            height: 60vh;
+            margin-bottom: 120px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+
+    .indexGrid{
+        max-width: 400px;
+        margin: 10px;
     }
 }

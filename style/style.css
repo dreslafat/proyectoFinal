@@ -259,6 +259,40 @@
   border-radius: 0px 0px 25px 25px;
 }
 
+@media (max-width: 768px) {
+  .indexGrid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 20px 0px;
+    grid-template-areas: "action" "productoDestacado1" "productoDestacado2" "productoDestacado3" "nuestraHistoria";
+    margin: 25px auto;
+    padding: 10px;
+    width: auto;
+    max-width: 740px;
+    justify-content: center;
+  }
+  .indexGrid .productoDestacado1 {
+    height: 60vh;
+  }
+  .indexGrid .productoDestacado2 {
+    height: 60vh;
+  }
+  .indexGrid .productoDestacado3 {
+    height: 60vh;
+  }
+  .indexGrid .nuestraHistoria {
+    height: 60vh;
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 420px) {
+  .indexGrid {
+    max-width: 400px;
+    margin: 10px;
+  }
+}
 main .historiaGrid {
   display: flex;
   flex-direction: column;
@@ -473,6 +507,28 @@ main .historiaGrid .artCraft4ever .imagen5 p {
   height: 5px;
 }
 
+@media (max-width: 768px) {
+  .historiaGrid p {
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .historiaGrid h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .historiaGrid h1 {
+    font-size: 2rem;
+  }
+  .historiaGrid h3 {
+    font-size: 1.25rem;
+  }
+  .parrafo6 {
+    margin: 25px;
+  }
+  .parrafo7 {
+    margin: 25px;
+  }
+}
 main .tituloSeccion {
   color: #ff003c;
   background-color: #e9ecef;
@@ -480,6 +536,7 @@ main .tituloSeccion {
   border-radius: 25px;
   text-align: center;
   font-weight: bold;
+  max-width: 100px;
 }
 main .tiendaFlex {
   display: flex;
@@ -668,6 +725,24 @@ main .overlay .popup .descripcionPopup .wpButt:hover {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .popup {
+    margin: 25px;
+    max-width: 700px;
+  }
+  .carrouselPopup {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
+@media (max-width: 420px) {
+  .popup {
+    margin: 15px;
+    max-width: 390px;
+    grid-template-rows: 0.25fr 1fr 1fr;
+  }
+}
 .faqFlex {
   display: flex;
   flex-wrap: wrap;
@@ -705,6 +780,22 @@ main .overlay .popup .descripcionPopup .wpButt:hover {
 .faqFlex .infoAlert h1 {
   text-align: center;
   color: #ff003c;
+}
+@media (max-width: 768px) {
+  .faqFlex .infoAlert .infoAlert {
+    padding: 5px;
+  }
+  .faqFlex .infoAlert .infoAlert p {
+    margin: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .faqFlex .infoAlert .infoAlert {
+    padding: 2.5px;
+  }
+  .faqFlex .infoAlert .infoAlert p {
+    margin: 7.5px;
+  }
 }
 .faqFlex .acordeonFlex {
   max-width: 1000px;
@@ -791,11 +882,59 @@ main .overlay .popup .descripcionPopup .wpButt:hover {
   text-align: center;
   color: #ff003c;
 }
+@media (max-width: 768px) {
+  .serviciosFlex .infoAlert .infoAlert {
+    padding: 5px;
+  }
+  .serviciosFlex .infoAlert .infoAlert p {
+    margin: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .serviciosFlex .infoAlert .infoAlert {
+    padding: 2.5px;
+  }
+  .serviciosFlex .infoAlert .infoAlert p {
+    margin: 7.5px;
+  }
+}
 .serviciosFlex .serviciosForm {
   max-width: 1100px;
   margin: 50px 50px 50px 50px;
 }
 
+@media (max-width: 768px) {
+  .serviciosFlex {
+    margin: 20px;
+    padding: 5px;
+  }
+  .serviciosFlex .introServicios {
+    padding: 10px;
+  }
+  .serviciosFlex .introServicios p {
+    margin: 10px;
+  }
+  .serviciosform {
+    max-width: 700px;
+    margin: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .serviciosFlex {
+    margin: 10px;
+    padding: 5px;
+  }
+  .serviciosFlex .introServicios {
+    padding: 5px;
+  }
+  .serviciosFlex .introServicios p {
+    margin: 5px;
+  }
+  .serviciosform {
+    max-width: 400px;
+    margin: 5px;
+  }
+}
 * {
   padding: 0;
   height: auto;
@@ -924,6 +1063,68 @@ body footer .redes img {
 body footer .redes img:hover {
   width: 38px;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: auto;
+    padding: 25px;
+    max-width: 768px;
+  }
+  body h1 {
+    font-size: 2rem;
+  }
+  body h2 {
+    font-size: 1.5rem;
+  }
+  body h3 {
+    font-size: 1.25rem;
+  }
+  body p {
+    font-size: 1rem;
+  }
+  body main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  body footer {
+    max-height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  body header {
+    max-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 700px;
+  }
+  body header .burguer {
+    display: inline-block;
+  }
+  body header .pcNav {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    margin: auto;
+  }
+  footer {
+    margin: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  main {
+    margin-bottom: 120px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

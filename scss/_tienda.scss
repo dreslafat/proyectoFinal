@@ -1,4 +1,5 @@
 @import "_mixin";
+@import "_variables";
 
 main {
     .tituloSeccion {
@@ -8,6 +9,7 @@ main {
         border-radius: 25px;
         text-align: center;
         font-weight: bold;
+        max-width: 100px;
     }
 
     .tiendaFlex {
@@ -234,4 +236,27 @@ main {
         }
     }
 
+}
+
+@media (max-width: 768px) {
+
+    .popup {
+        margin: 25px;
+        max-width: 700px;
+    }
+
+    .carrouselPopup {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .popup {
+        margin: 15px;
+        max-width: 390px;
+        grid-template-rows: 0.25fr 1fr 1fr;
+    }
 }
