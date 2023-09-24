@@ -1,0 +1,57 @@
+@import "_mixin";
+
+.faqFlex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 25px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 10px 30px 10px;
+    margin: 25px;
+
+    .infoAlert{
+        @include infoAlert
+    }
+
+    .acordeonFlex {
+        max-width: 1000px;
+        margin: 25px;
+
+        h2{
+            color: #212529;
+            font-size: 1.25rem;
+            font-family:  "DM Mono", monospace;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            color: #212529;
+        }
+
+        a {
+            color: #ff003c;
+            text-decoration: none;
+        }
+
+        ul {
+            color: #212529;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ol {
+            color: #212529;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        span {
+            color: #212529;
+            font-weight: bold;
+        }
+    }
+
+
+}

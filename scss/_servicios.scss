@@ -1,0 +1,46 @@
+@import "_mixin";
+
+.serviciosFlex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 25px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 10px 30px 10px;
+    margin: 25px;
+
+    h1 {
+        color: #ff003c;
+        text-align: center;
+    }
+
+    .introServicios {
+        max-width: 1000px;
+
+        p {
+            text-align: justify;
+            margin: 12.5px 100px 12.5px 100px;
+        }
+
+        span {
+            color: #ff003c;
+        }
+
+        #introServicios {
+            color: #212529;
+        }
+    }
+
+    .infoAlert {
+        @include infoAlert
+    }
+
+    .serviciosForm {
+        max-width: 1100px;
+        margin: 50px 50px 50px 50px;
+    }
+}
