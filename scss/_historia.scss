@@ -1,0 +1,179 @@
+@import "_mixin";
+
+main {
+
+    .historiaGrid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        max-width: 1300px;
+        margin: 25px;
+        background-color: #e9ecef;
+        border-radius: 100px;
+        align-self: center;
+
+        h1 {
+            color: #ff003c;
+        }
+
+        h2 {
+            color: #ff003c;
+        }
+
+        h3 {
+            color: #ff003c;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #212529;
+        }
+
+        span {
+            color: #ff003c;
+        }
+
+        .auroraInicios{
+            margin: 25px;
+            max-width: 1200px;
+
+            .tituloArticulo1 {
+                align-items: center;
+                text-align: center;
+                margin: 25px;
+            }
+
+            .parrafo1 {
+                max-width: 600px;
+                align-items: center;
+                text-align: right;
+                margin: auto 0px auto 5px;
+            }
+        }
+
+        .imagen1 {
+            @include imagenConPieDeFoto
+        }
+
+        .parrafo2 {
+            text-align: center;
+            margin: 10px auto 10px auto;
+
+            p {
+                margin: 50px;
+            }
+        }
+
+        .tallerInicios {
+            max-width: 1200px;
+            margin: 25px;
+            align-self: center;
+
+            .tituloArticulo2 {
+                text-align: right;
+                align-self: center;
+                margin: 25px;
+            }
+
+            .parrafo3 {
+                max-width: 600px;
+                text-align: right;
+            }   
+        
+            .imagen2 {
+                @include imagenConPieDeFoto
+            }
+        }
+
+        .parrafo4 {
+            margin: auto;
+            align-items: center;
+        
+            p {
+                text-align: center;
+                align-self: center;
+                margin: auto;
+                max-width: 1000px;
+                background-color: #c8002f;
+                border-radius: 25px;
+                padding: 25px;
+                color: #ced4da;
+                box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+            }
+
+            h3 {
+                text-align: right;
+                margin: 25px;
+            }
+        }
+
+        .epocaDorada {
+            max-width: 1200px;
+            margin: 25px;
+            align-self: center;
+
+            .tituloArticulo3 {
+                margin: 25px;
+                text-align: center;
+                align-self: center;
+            }
+
+            .parrafo5 {
+                text-align: center;
+                margin: 50px auto 50px auto;
+                align-self: center;
+            }
+
+            div{
+                .parrafo6 {
+                    max-width: 600px;
+                    text-align: right;
+                    align-self: flex-end;
+                    margin: 12.5px 0px 12.5px 25px;
+                }
+                
+                .parrafo7 {
+                    max-width: 600px;
+                    text-align: right;
+                    align-self: flex-start;
+                    margin: 12.5px 0px 12.5px 25px;
+                }                
+            }
+
+            .imagen3 {
+                @include imagenConPieDeFoto
+            }
+        }
+
+        .artCraft4ever {
+            max-width: 1200px;
+            margin: 25px;
+            justify-content: center;
+            align-self: center;
+
+            .tituloArticulo4 {
+                text-align: center;
+                align-self: center;
+                margin: 25px;
+            }
+
+            .parrafo8 {
+                text-align: justify;
+                margin: 10px auto 10px auto;
+                max-width: 400px;
+            }
+            
+            .parrafo9 {
+                text-align: justify;
+                margin: 10px auto 10px auto;
+                max-width: 400px;
+            }
+
+            .imagen5 {
+                @include imagenConPieDeFoto
+            }
+            
+        }
+    }
+}

@@ -389,4 +389,218 @@ body footer .redes img:hover {
   border-radius: 0px 0px 25px 25px;
 }
 
+main .historiaGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 25px;
+  background-color: #e9ecef;
+  border-radius: 100px;
+  align-self: center;
+}
+main .historiaGrid h1 {
+  color: #ff003c;
+}
+main .historiaGrid h2 {
+  color: #ff003c;
+}
+main .historiaGrid h3 {
+  color: #ff003c;
+}
+main .historiaGrid p {
+  font-size: 1.5rem;
+  color: #212529;
+}
+main .historiaGrid span {
+  color: #ff003c;
+}
+main .historiaGrid .auroraInicios {
+  margin: 25px;
+  max-width: 1200px;
+}
+main .historiaGrid .auroraInicios .tituloArticulo1 {
+  align-items: center;
+  text-align: center;
+  margin: 25px;
+}
+main .historiaGrid .auroraInicios .parrafo1 {
+  max-width: 600px;
+  align-items: center;
+  text-align: right;
+  margin: auto 0px auto 5px;
+}
+main .historiaGrid .imagen1 {
+  max-width: 600px;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  grid-gap: 5px;
+  align-content: center;
+  justify-content: center;
+}
+main .historiaGrid .imagen1 img {
+  height: auto;
+  max-width: 90%;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
+}
+main .historiaGrid .imagen1 p {
+  color: #212529;
+  font-size: 0.75rem;
+  text-align: center;
+  height: 5px;
+}
+main .historiaGrid .parrafo2 {
+  text-align: center;
+  margin: 10px auto 10px auto;
+}
+main .historiaGrid .parrafo2 p {
+  margin: 50px;
+}
+main .historiaGrid .tallerInicios {
+  max-width: 1200px;
+  margin: 25px;
+  align-self: center;
+}
+main .historiaGrid .tallerInicios .tituloArticulo2 {
+  text-align: right;
+  align-self: center;
+  margin: 25px;
+}
+main .historiaGrid .tallerInicios .parrafo3 {
+  max-width: 600px;
+  text-align: right;
+}
+main .historiaGrid .tallerInicios .imagen2 {
+  max-width: 600px;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  grid-gap: 5px;
+  align-content: center;
+  justify-content: center;
+}
+main .historiaGrid .tallerInicios .imagen2 img {
+  height: auto;
+  max-width: 90%;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
+}
+main .historiaGrid .tallerInicios .imagen2 p {
+  color: #212529;
+  font-size: 0.75rem;
+  text-align: center;
+  height: 5px;
+}
+main .historiaGrid .parrafo4 {
+  margin: auto;
+  align-items: center;
+}
+main .historiaGrid .parrafo4 p {
+  text-align: center;
+  align-self: center;
+  margin: auto;
+  max-width: 1000px;
+  background-color: #c8002f;
+  border-radius: 25px;
+  padding: 25px;
+  color: #ced4da;
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
+}
+main .historiaGrid .parrafo4 h3 {
+  text-align: right;
+  margin: 25px;
+}
+main .historiaGrid .epocaDorada {
+  max-width: 1200px;
+  margin: 25px;
+  align-self: center;
+}
+main .historiaGrid .epocaDorada .tituloArticulo3 {
+  margin: 25px;
+  text-align: center;
+  align-self: center;
+}
+main .historiaGrid .epocaDorada .parrafo5 {
+  text-align: center;
+  margin: 50px auto 50px auto;
+  align-self: center;
+}
+main .historiaGrid .epocaDorada div .parrafo6 {
+  max-width: 600px;
+  text-align: right;
+  align-self: flex-end;
+  margin: 12.5px 0px 12.5px 25px;
+}
+main .historiaGrid .epocaDorada div .parrafo7 {
+  max-width: 600px;
+  text-align: right;
+  align-self: flex-start;
+  margin: 12.5px 0px 12.5px 25px;
+}
+main .historiaGrid .epocaDorada .imagen3 {
+  max-width: 600px;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  grid-gap: 5px;
+  align-content: center;
+  justify-content: center;
+}
+main .historiaGrid .epocaDorada .imagen3 img {
+  height: auto;
+  max-width: 90%;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
+}
+main .historiaGrid .epocaDorada .imagen3 p {
+  color: #212529;
+  font-size: 0.75rem;
+  text-align: center;
+  height: 5px;
+}
+main .historiaGrid .artCraft4ever {
+  max-width: 1200px;
+  margin: 25px;
+  justify-content: center;
+  align-self: center;
+}
+main .historiaGrid .artCraft4ever .tituloArticulo4 {
+  text-align: center;
+  align-self: center;
+  margin: 25px;
+}
+main .historiaGrid .artCraft4ever .parrafo8 {
+  text-align: justify;
+  margin: 10px auto 10px auto;
+  max-width: 400px;
+}
+main .historiaGrid .artCraft4ever .parrafo9 {
+  text-align: justify;
+  margin: 10px auto 10px auto;
+  max-width: 400px;
+}
+main .historiaGrid .artCraft4ever .imagen5 {
+  max-width: 600px;
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  grid-gap: 5px;
+  align-content: center;
+  justify-content: center;
+}
+main .historiaGrid .artCraft4ever .imagen5 img {
+  height: auto;
+  max-width: 90%;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
+}
+main .historiaGrid .artCraft4ever .imagen5 p {
+  color: #212529;
+  font-size: 0.75rem;
+  text-align: center;
+  height: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
