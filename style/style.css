@@ -547,6 +547,9 @@ main .tiendaFlex .tituloSeccion {
   margin: 25px;
   text-align: center;
   font-weight: bold;
+  position: absolute;
+  left: 50%;
+  display: block;
 }
 main .tiendaFlex .cajaBoton {
   display: grid;
