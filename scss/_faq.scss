@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     max-width: 1300px;
     margin: 25px;
-    background-color: #e9ecef;
+    background-color: $blanco;
     border-radius: 50px;
     align-self: center;
     justify-content: center;
@@ -23,33 +23,33 @@
         margin: 25px;
 
         h2{
-            color: #212529;
+            color: $negro;
             font-size: 1.25rem;
             font-family:  "DM Mono", monospace;
         }
 
         p {
             font-family: 'Roboto', sans-serif;
-            color: #212529;
+            color: $negro;
         }
 
         a {
-            color: #ff003c;
+            color: $rojo;
             text-decoration: none;
         }
 
         ul {
-            color: #212529;
+            color: $negro;
             font-family: 'Roboto', sans-serif;
         }
 
         ol {
-            color: #212529;
+            color: $negro;
             font-family: 'Roboto', sans-serif;
         }
 
         span {
-            color: #212529;
+            color: $negro;
             font-weight: bold;
         }
     }

@@ -12,32 +12,32 @@
     }
 
     h1 {
-        font-family: "Major Mono Display", monospace;
-        color: #e9ecef;
+        font-family: $fuenteTitulos;
+        color: $blanco;
         font-size: 3rem;
     }
 
     h2 {
-        font-family: "Major Mono Display", monospace;
-        color: #dee2e6;
+        font-family: $fuenteTitulos;
+        color: $blanco;
         font-size: 2.5rem;
     }
 
     h3 {
-        font-family: "DM Mono", monospace;
-        color: #dee2e6;
+        font-family: $fuenteSubTitulos;
+        color: $blanco;
         font-size: 1.75rem;
     }
 
     h4 {
-        font-family: "Major Mono Display", monospace;
-        color: #dee2e6;
+        font-family: $fuenteTitulos;
+        color: $blanco;
         font-size: 1.5rem;
     }
 
     p {
-        font-family: "Roboto", sans-serif;
-        color: #ced4da;
+        font-family: $fuentePrincipal;
+        color: $blanco;
         font-size: 1rem;
     }
 
@@ -80,7 +80,7 @@ body {
                 border: 1px solid rgb(0, 0, 0, 0.5);
                 box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
                 color: #ced4da;
-                background-color: #6D6B6B;
+                background-color: $gris;
 
                 a {
                     text-decoration: none;
@@ -89,7 +89,7 @@ body {
 
                 &:hover {
                     box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
-                    background-color: #ff003c;
+                    background-color: $rojo;
                     transition: all 0.3s ease;
                 }
             }

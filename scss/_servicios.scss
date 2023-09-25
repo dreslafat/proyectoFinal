@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     max-width: 1300px;
     margin: 25px;
-    background-color: #e9ecef;
+    background-color: $blanco;
     border-radius: 50px;
     align-self: center;
     justify-content: center;
@@ -15,7 +15,7 @@
     margin: 25px;
 
     h1 {
-        color: #ff003c;
+        color: $rojo;
         text-align: center;
     }
 
@@ -28,11 +28,11 @@
         }
 
         span {
-            color: #ff003c;
+            color: $rojo;
         }
 
         #introServicios {
-            color: #212529;
+            color: $negro;
         }
     }
 

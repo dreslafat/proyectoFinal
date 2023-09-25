@@ -10,29 +10,29 @@ main {
 
         max-width: 1300px;
         margin: 25px;
-        background-color: #e9ecef;
+        background-color: $blanco;
         border-radius: 100px;
         align-self: center;
 
         h1 {
-            color: #ff003c;
+            color: $rojo;
         }
 
         h2 {
-            color: #ff003c;
+            color: $rojo;
         }
 
         h3 {
-            color: #ff003c;
+            color: $rojo;
         }
 
         p {
             font-size: 1.5rem;
-            color: #212529;
+            color: $negro;
         }
 
         span {
-            color: #ff003c;
+            color: $rojo;
         }
 
         .auroraInicios{
@@ -100,7 +100,7 @@ main {
                 border-radius: 25px;
                 padding: 25px;
                 color: #ced4da;
-                box-shadow: 2.5px 2.5px 10px rgb(0, 0, 0, 0.5)
+                @include cajaSombra;
             }
 
             h3 {
