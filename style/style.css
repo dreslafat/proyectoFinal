@@ -529,15 +529,6 @@ main .historiaGrid .artCraft4ever .imagen5 p {
     margin: 25px;
   }
 }
-main .tituloSeccion {
-  color: #ff003c;
-  background-color: #e9ecef;
-  margin: 25px;
-  border-radius: 25px;
-  text-align: center;
-  font-weight: bold;
-  max-width: 100px;
-}
 main .tiendaFlex {
   display: flex;
   flex-wrap: wrap;
@@ -550,6 +541,13 @@ main .tiendaFlex {
   align-content: center;
   padding: 30px 10px 30px 10px;
   margin: 25px;
+}
+main .tiendaFlex .tituloSeccion {
+  color: #ff003c;
+  margin: 25px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
 }
 main .tiendaFlex .cajaBoton {
   display: grid;

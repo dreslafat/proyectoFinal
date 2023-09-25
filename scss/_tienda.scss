@@ -2,16 +2,7 @@
 @import "_variables";
 
 main {
-    .tituloSeccion {
-        color: #ff003c;
-        background-color: #e9ecef;
-        margin: 25px;
-        border-radius: 25px;
-        text-align: center;
-        font-weight: bold;
-        max-width: 100px;
-    }
-
+    
     .tiendaFlex {
         display: flex;
         flex-wrap: wrap;
@@ -24,6 +15,14 @@ main {
         align-content: center;
         padding: 30px 10px 30px 10px;
         margin: 25px;
+        
+        .tituloSeccion {
+            color: #ff003c;
+            margin: 25px;
+            text-align: center;
+            font-weight: bold;
+            display: block;
+        }
 
         .cajaBoton {
             display: grid;
