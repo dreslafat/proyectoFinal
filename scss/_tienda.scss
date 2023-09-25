@@ -18,11 +18,9 @@ main {
         
         .tituloSeccion {
             color: #ff003c;
-            margin: 25px;
+            margin: 25px auto 25px auto;
             text-align: center;
-            font-weight: bold;
-            position: absolute;
-            left: 50%;
+            max-width: 1200px;
             display: block;
         }
 

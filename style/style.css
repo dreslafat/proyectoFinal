@@ -543,13 +543,11 @@ main .tiendaFlex {
   margin: 25px;
 }
 main .tiendaFlex .tituloSeccion {
-  color: #ff003c;
-  margin: 25px;
-  text-align: center;
-  font-weight: bold;
-  position: absolute;
-  left: 50%;
-  display: block;
+    color: #ff003c;
+    margin: 25px auto 25px auto;
+    text-align: center;
+    max-width: 1200px;
+    display: block;
 }
 main .tiendaFlex .cajaBoton {
   display: grid;
