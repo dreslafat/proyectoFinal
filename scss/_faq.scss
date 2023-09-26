@@ -14,7 +14,7 @@
     padding: 30px 10px 30px 10px;
     margin: 25px;
 
-    .infoAlert{
+    .infoAlert {
         @include infoAlert
     }
 
@@ -22,10 +22,10 @@
         max-width: 1000px;
         margin: 25px;
 
-        h2{
+        h2 {
             color: $negro;
             font-size: 1.25rem;
-            font-family:  "DM Mono", monospace;
+            font-family: "DM Mono", monospace;
         }
 
         p {

@@ -35,7 +35,7 @@ main {
             color: $rojo;
         }
 
-        .auroraInicios{
+        .auroraInicios {
             margin: 25px;
             max-width: 1200px;
 
@@ -80,8 +80,8 @@ main {
             .parrafo3 {
                 max-width: 600px;
                 text-align: right;
-            }   
-        
+            }
+
             .imagen2 {
                 @include imagenConPieDeFoto
             }
@@ -90,7 +90,7 @@ main {
         .parrafo4 {
             margin: auto;
             align-items: center;
-        
+
             p {
                 text-align: center;
                 align-self: center;
@@ -126,20 +126,20 @@ main {
                 align-self: center;
             }
 
-            div{
+            div {
                 .parrafo6 {
                     max-width: 600px;
                     text-align: right;
                     align-self: flex-end;
                     margin: 12.5px 0px 12.5px 25px;
                 }
-                
+
                 .parrafo7 {
                     max-width: 600px;
                     text-align: right;
                     align-self: flex-start;
                     margin: 12.5px 0px 12.5px 25px;
-                }                
+                }
             }
 
             .imagen3 {
@@ -164,7 +164,7 @@ main {
                 margin: 10px auto 10px auto;
                 max-width: 400px;
             }
-            
+
             .parrafo9 {
                 text-align: justify;
                 margin: 10px auto 10px auto;
@@ -174,31 +174,31 @@ main {
             .imagen5 {
                 @include imagenConPieDeFoto
             }
-            
+
         }
     }
 }
 
 @media (max-width: 768px) {
 
-    .historiaGrid  
-    {   
-        p{
+    .historiaGrid {
+        p {
             text-align: justify;
             font-size: 1rem;
         }
-        
+
         h2 {
             text-align: center;
             font-size: 1.5rem;
         }
+
         h1 {
-                font-size: 2rem;
-            }
-            
-                h3 {
-                    font-size: 1.25rem;
-                }
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
     }
 
     .parrafo6 {
@@ -208,4 +208,4 @@ main {
     .parrafo7 {
         margin: 25px;
     }
-    }
+}
