@@ -56,3 +56,27 @@
 
 
 }
+
+@media (max-width: 768px) {
+    .faqFlex {
+        .infoAlert {
+            padding: 15px;
+
+            p {
+                margin: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .faqFlex {
+        .infoAlert {
+            padding: 7.5px;
+
+            p {
+                margin: 7.5px
+            }
+        }
+    }
+}

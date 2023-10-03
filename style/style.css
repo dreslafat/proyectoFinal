@@ -626,7 +626,7 @@ main .tiendaFlex .cajaBoton .precioLetra .precio span {
 main .tiendaFlex .cajaBoton img {
   max-width: 298px;
 }
-main .overlay {
+main .hiddenTienda .overlay {
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   left: 0;
@@ -638,10 +638,10 @@ main .overlay {
   justify-content: center;
   visibility: hidden;
 }
-main .overlay:active {
+main .hiddenTienda .overlay:active {
   visibility: visible;
 }
-main .overlay .popup {
+main .hiddenTienda .overlay .popup {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
@@ -657,23 +657,23 @@ main .overlay .popup {
   border: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
-main .overlay .popup .tituloPopup {
+main .hiddenTienda .overlay .popup .tituloPopup {
   grid-area: tituloPopup;
   color: #ff003c;
 }
-main .overlay .popup .btn-cerrar-popup {
+main .hiddenTienda .overlay .popup .btn-cerrar-popup {
   grid-area: btn-cerrar-popup;
   display: block;
   text-align: right;
 }
-main .overlay .popup .btn-cerrar-popup img {
+main .hiddenTienda .overlay .popup .btn-cerrar-popup img {
   height: 32px;
 }
-main .overlay .popup .btn-cerrar-popup img:hover {
+main .hiddenTienda .overlay .popup .btn-cerrar-popup img:hover {
   height: 24px;
   transition: all 0.3s ease;
 }
-main .overlay .popup .carrouselPopup {
+main .hiddenTienda .overlay .popup .carrouselPopup {
   grid-area: carrouselPopup;
   max-width: 400px;
   margin: auto;
@@ -681,7 +681,7 @@ main .overlay .popup .carrouselPopup {
   border: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
-main .overlay .popup .descripcionPopup {
+main .hiddenTienda .overlay .popup .descripcionPopup {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
@@ -692,12 +692,12 @@ main .overlay .popup .descripcionPopup {
   margin-top: 10px;
   overflow: auto;
 }
-main .overlay .popup .descripcionPopup .descriDiv {
+main .hiddenTienda .overlay .popup .descripcionPopup .descriDiv {
   grid-area: descriDiv;
   color: #212529;
   text-align: justify;
 }
-main .overlay .popup .descripcionPopup .precioPopup {
+main .hiddenTienda .overlay .popup .descripcionPopup .precioPopup {
   grid-area: precioPopup;
   color: #ff003c;
   font-style: italic;
@@ -705,10 +705,10 @@ main .overlay .popup .descripcionPopup .precioPopup {
   height: 20px;
   text-align: center;
 }
-main .overlay .popup .descripcionPopup .precioPopup span {
+main .hiddenTienda .overlay .popup .descripcionPopup .precioPopup span {
   font-size: 0.75rem;
 }
-main .overlay .popup .descripcionPopup .wpButt {
+main .hiddenTienda .overlay .popup .descripcionPopup .wpButt {
   grid-area: wpButt;
   color: #e9ecef;
   border-radius: 5px;
@@ -721,7 +721,7 @@ main .overlay .popup .descripcionPopup .wpButt {
   text-decoration: none;
   text-align: center;
 }
-main .overlay .popup .descripcionPopup .wpButt:hover {
+main .hiddenTienda .overlay .popup .descripcionPopup .wpButt:hover {
   background-color: #0f7936;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
@@ -783,22 +783,6 @@ main .overlay .popup .descripcionPopup .wpButt:hover {
   text-align: center;
   color: #ff003c;
 }
-@media (max-width: 768px) {
-  .faqFlex .infoAlert .infoAlert {
-    padding: 5px;
-  }
-  .faqFlex .infoAlert .infoAlert p {
-    margin: 15px;
-  }
-}
-@media (max-width: 420px) {
-  .faqFlex .infoAlert .infoAlert {
-    padding: 2.5px;
-  }
-  .faqFlex .infoAlert .infoAlert p {
-    margin: 7.5px;
-  }
-}
 .faqFlex .acordeonFlex {
   max-width: 1000px;
   margin: 25px;
@@ -829,6 +813,22 @@ main .overlay .popup .descripcionPopup .wpButt:hover {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .faqFlex .infoAlert {
+    padding: 15px;
+  }
+  .faqFlex .infoAlert p {
+    margin: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .faqFlex .infoAlert {
+    padding: 7.5px;
+  }
+  .faqFlex .infoAlert p {
+    margin: 7.5px;
+  }
+}
 .serviciosFlex {
   display: flex;
   flex-wrap: wrap;
@@ -883,22 +883,6 @@ main .overlay .popup .descripcionPopup .wpButt:hover {
 .serviciosFlex .infoAlert h1 {
   text-align: center;
   color: #ff003c;
-}
-@media (max-width: 768px) {
-  .serviciosFlex .infoAlert .infoAlert {
-    padding: 5px;
-  }
-  .serviciosFlex .infoAlert .infoAlert p {
-    margin: 15px;
-  }
-}
-@media (max-width: 420px) {
-  .serviciosFlex .infoAlert .infoAlert {
-    padding: 2.5px;
-  }
-  .serviciosFlex .infoAlert .infoAlert p {
-    margin: 7.5px;
-  }
 }
 .serviciosFlex .serviciosForm {
   max-width: 1100px;
@@ -1034,6 +1018,9 @@ body main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+body main .saltoPagina {
+  display: block;
 }
 body footer {
   align-self: flex-end;
